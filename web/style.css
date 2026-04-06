@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    color: #222;
+}
+
+.app {
+    max-width: 720px;
+    margin: 20px auto;
+    padding: 16px;
+}
+
+h1 {
+    margin: 0 0 12px;
+    color: #5133ca;
+    text-align: center;
+}
+
+.section-title {
+    margin: 14px 0 6px;
+    color: #666;
+    font-size: 15px;
+}
+
+.add {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+#input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    background: #fff;
+}
+
+.add button {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    background: #5133ca;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#list, #list-done {
+    list-style: none;
+    margin: 6px 0 12px;
+    padding: 0;
+    border: 1px solid #e3e3e3;
+    background: #fff;
+    border-radius: 6px;
+}
+
+#list li, #list-done li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+#list li:last-child, #list-done li:last-child {
+    border-bottom: none;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.todo-text {
+    flex: 1;
+    word-break: break-word;
+}
+
+.todo-text.done {
+    color: #777;
+    text-decoration: line-through;
+}
+
+.actions {
+    display: flex;
+    gap: 6px;
+}
+
+.actions button {
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.filebar {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin: 10px 0 16px;
+}
+
+.filebar label, .filebar button {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.filebar input[type="file"] {
+    display: none;
+}
+
+.empty {
+    padding: 10px;
+    color: #999;
+    text-align: center;
+}

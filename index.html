@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TO-DO</title>
+    <link rel="stylesheet" href="web/style.css" />
+</head>
+<body>
+<div class="app">
+    <h1>Мои дела</h1>
+
+    <form class="add" id="add-form">
+        <input id="input" type="text" placeholder="Новое дело…" required />
+        <button type="submit">Добавить</button>
+    </form>
+
+    <h2 class="section-title">Активные</h2>
+    <ul id="list"></ul>
+
+    <div class="filebar">
+        <label class="filebtn">
+            Открыть JSON
+            <input id="openFile" type="file" accept="application/json" />
+        </label>
+        <button id="saveBtn" type="button">Сохранить JSON</button>
+    </div>
+
+    <h2 class="section-title">Выполнено</h2>
+    <ul id="list-done"></ul>
+</div>
+
+<script src="web/index.js"></script>
+</body>
+</html>
